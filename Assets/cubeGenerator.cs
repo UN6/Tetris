@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cubeGenerator : MonoBehaviour
+public class cubeGenerator : MonoBehaviour//キューブを作ってランダムに落としているだけ
 {
     public GameObject CubePrefab;
     float span = 2.0f;

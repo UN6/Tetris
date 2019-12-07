@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManagerToHome : MonoBehaviour
+public class SceneManagerToHome : MonoBehaviour//タイトル（スタートシーン）に戻るだけのプログラム
 {
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class SceneManagerToHome : MonoBehaviour
     {
 
     }
-    public void ToHome()　//タイトル（サンプルシーン）に戻る
+    public void ToHome()　//タイトル（今はサンプルシーン）に戻る（変更必須）
     {
         SceneManager.LoadScene("SampleScene");
     }

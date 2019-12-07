@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseReact : MonoBehaviour
+public class MouseReact : MonoBehaviour//クリックしたキューブを飛ばすプログラム
 {
     public string cubeTag = "cube";
     int a = 0; 
@@ -26,7 +26,7 @@ public class MouseReact : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag(cubeTag))
                 {
-                    a++;
+                    a++;//背景の色を変えるためのa
                     hit.collider.gameObject.GetComponent<cubeController>().Shoot(new Vector3(0, 1000, 2000));
                     this.haikei.GetComponent<soraColor>().colorChange(a);
                 }

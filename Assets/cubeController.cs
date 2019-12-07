@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cubeController : MonoBehaviour
+public class cubeController : MonoBehaviour//キューブの破壊に関係するプログラム
 {
     public void Shoot(Vector3 dir)
     {
@@ -23,8 +23,8 @@ public class cubeController : MonoBehaviour
         }
         if(transform.position.z > 400)
         {   
-            GetComponent<ParticleSystem>().Play();
-            Destroy(gameObject,1.5f);
+            GetComponent<ParticleSystem>().Play(); //エフェクトの発生
+            Destroy(gameObject,1.5f);              //Z軸が400に達した1.5秒後にキューブを破壊
         }
     }
 }
